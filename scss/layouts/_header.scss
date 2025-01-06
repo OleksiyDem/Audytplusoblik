@@ -16,6 +16,9 @@
     @media screen and (max-width: $bp-desktop) {
       gap: 10px;
     }
+    @media screen and (max-width: $bp-tablet) {
+      gap: 32px;
+    }
   }
   &__nav {
     flex-grow: 1;
@@ -94,9 +97,20 @@
     align-items: center;
     gap: 8px;
     fill: #011c44b8;
-    // opacity: 0.9;
-    // @media screen and (max-width: $bp-tablet) {
-    //   display: none;
-    // }
+    @media screen and (max-width: $bp-mobile) {
+      display: none;
+    }
+  }
+  &__burger {
+    display: none;
+    @media screen and (max-width: $bp-tablet) {
+      display: block;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      fill: var(--color-brand);
+      width: 24px;
+      height: 24px;
+    }
   }
 }
