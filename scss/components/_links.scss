@@ -1,0 +1,38 @@
+.link {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+  &:hover {
+    font-weight: 500;
+    color: var(--color-brand);
+  }
+  &__lang {
+    color: #011c44b8;
+  }
+
+  @media screen and (max-width: $bp-desktop) {
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: normal;
+  }
+  &__sub-menu {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.33;
+    letter-spacing: 0.05em;
+    transition: color 0.2s;
+    &:hover {
+      font-weight: 500;
+      color: var(--color-brand);
+    }
+
+    @media screen and (max-width: $bp-desktop) {
+      line-height: 1.17;
+      letter-spacing: normal;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 0;
+  // backdrop-filter: blur(10px);
+  background-color: rgba(242, 241, 237, 0.85);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+
+  &__container,
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    @media screen and (max-width: $bp-desktop) {
+      gap: 10px;
+    }
+  }
+  &__nav {
+    flex-grow: 1;
+  }
+  &__logo {
+    max-width: 132px;
+
+    // max-width: 52px;
+    // @media screen and (max-width: $bp-desktop) {
+    //   width: 122px;
+    //   height: 28px;
+    // }
+    // @media screen and (max-width: $bp-tablet) {
+    //   width: 92px;
+    //   height: 24px;
+    // }
+  }
+  &__menu {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-grow: 1;
+    @media screen and (max-width: $bp-desktop) {
+      justify-content: space-evenly;
+      gap: 0;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  // header nav ul li
+  &__dropdown {
+    position: relative;
+    float: left;
+    // padding-bottom: 20px;
+  }
+
+  &__dropdown:hover > &__sub-menu {
+    display: initial;
+    transition: display 1s;
+  }
+
+  // header nav ul li ul
+  &__sub-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 226px;
+    line-height: 2;
+    font-size: 16px;
+    padding: 16px 0px 4px 10px;
+    // backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: rgba(242, 241, 237, 0.9);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+    transition: display 1s;
+  }
+  // header nav ul li ul li
+  &__dropdown--level1 {
+    width: 100%;
+    // border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  // header nav ul li ul li ul
+  &__sub-menu--level1 {
+    left: 212px;
+    top: 0;
+    @media screen and (max-width: $bp-desktop) {
+      left: -234px;
+    }
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    fill: #011c44b8;
+    // opacity: 0.9;
+    // @media screen and (max-width: $bp-tablet) {
+    //   display: none;
+    // }
+  }
+}
