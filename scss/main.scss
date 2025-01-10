@@ -1,4 +1,5 @@
 @import './utils/fonts';
+@import './utils/texts';
 @import './utils/variables';
 @import './utils/utils';
 @import './base';
@@ -6,6 +7,9 @@
 @import './layouts/header';
 @import './layouts/hero-section';
 @import './layouts/container';
+@import './layouts/crew-section';
+@import './layouts/whywe-section';
 
+@import './components/crew-card';
 @import './components/buttons';
 @import './components/links';

@@ -1,0 +1,25 @@
+.crew-section {
+  margin-top: 52px;
+  &__title {
+    margin-bottom: 1.4em;
+  }
+
+  &__list {
+    display: flex;
+    gap: 56px;
+    flex-wrap: wrap;
+    @media screen and (max-width: $bp-desktop) {
+      gap: 48px;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      gap: 16px;
+      flex-direction: column;
+    }
+  }
+  &__item {
+    flex-basis: calc((100% - 112px) / 3);
+    @media screen and (max-width: $bp-desktop) {
+      flex-basis: calc((100% - 96px) / 3);
+    }
+  }
+}
