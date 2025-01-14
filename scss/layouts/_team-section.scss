@@ -1,0 +1,57 @@
+.team-section {
+  padding-top: 52px;
+  &__title {
+    margin-bottom: 1.4em;
+  }
+
+  &__list {
+    display: flex;
+    gap: 56px;
+    flex-wrap: wrap;
+    margin-bottom: 3em;
+    @media screen and (max-width: $bp-desktop) {
+      gap: 48px;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 2em;
+      gap: 16px;
+      flex-direction: column;
+    }
+  }
+  &__item {
+    flex-basis: calc((100% - 112px) / 3);
+    @media screen and (max-width: $bp-desktop) {
+      flex-basis: calc((100% - 96px) / 3);
+    }
+  }
+  &__image {
+    max-width: 442px;
+    float: left; /* Вирівнювання по лівому краю */
+    margin: 0 40px 4px 0px; /* Відступи навколо картинки */
+    border-radius: 12px;
+    box-shadow: 0 2px 10px 0 rgba(222, 221, 221, 0.5);
+
+    @media screen and (max-width: $bp-desktop) {
+      max-width: 344px;
+      // max-height: 180px;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+      // display: block;
+      // gap: 0px;
+      // max-width: -webkit-fill-available;
+      // margin: 0 0px 2em 0px;
+    }
+  }
+  &__image-mobile {
+    display: none;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: block;
+      max-width: -webkit-fill-available;
+      margin: 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px 0 rgba(222, 221, 221, 0.5);
+    }
+  }
+}

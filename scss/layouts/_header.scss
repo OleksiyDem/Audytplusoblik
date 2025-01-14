@@ -1,9 +1,11 @@
 .header {
+  z-index: 2;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   padding: 16px 0;
+  padding: 12px 0;
   // backdrop-filter: blur(10px);
   background-color: rgba(254, 253, 248, 0.85);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);

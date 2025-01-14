@@ -4,12 +4,16 @@
 @import './utils/utils';
 @import './base';
 
+@import './layouts/container';
 @import './layouts/header';
 @import './layouts/hero-section';
-@import './layouts/container';
-@import './layouts/crew-section';
+@import './layouts/sevices-section';
+@import './layouts/team-section';
 @import './layouts/whywe-section';
 
-@import './components/crew-card';
+@import './components/carousel-button';
 @import './components/buttons';
 @import './components/links';
+@import './components/pagination';
+@import './components/services-card';
+@import './components/team-card';

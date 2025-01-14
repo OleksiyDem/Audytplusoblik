@@ -1,0 +1,17 @@
+.services-section {
+  padding-top: 52px;
+  &__title {
+    margin-bottom: 1.4em;
+  }
+  &__slider {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  &__container {
+    overflow: hidden;
+  }
+  &__list {
+    margin-bottom: 32px;
+  }
+}
