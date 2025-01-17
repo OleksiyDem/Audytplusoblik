@@ -39,6 +39,10 @@ var swiper = new Swiper('.swiper-customers', {
   // Optional parameters
   loop: true,
 
+  autoplay: {
+    delay: 2000,
+  },
+
   // Default parameters к-ть слайдів на екрані
   slidesPerView: 1,
 

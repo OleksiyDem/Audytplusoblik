@@ -3,16 +3,20 @@
   align-items: center;
   justify-content: center;
   gap: 24px;
+  @media screen and (max-width: $bp-mobile) {
+    gap: 12px;
+  }
 
   &__button {
+    opacity: 0.8;
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: var(--color-brand-dark);
+    background-color: var(--color-secondary-dark);
     cursor: pointer;
     transition: background-color 0.2s;
     &--active {
-      background-color: var(--color-brand-normal);
+      background-color: var(--color-brand);
     }
   }
 }
