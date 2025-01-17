@@ -22,6 +22,7 @@
     margin: 0 24px;
     padding-top: 3em;
     @media screen and (max-width: $bp-tablet) {
+      padding-top: 2em;
       margin: 0;
       flex-direction: column-reverse;
       align-items: center;
