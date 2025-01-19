@@ -26,13 +26,14 @@
     text-align: center;
   }
   &__text {
+    margin-top: 32px;
     font-size: 14px;
     max-width: 292px;
     // line-height: 1.5;
     @media screen and (max-width: $bp-tablet) {
       text-align: center;
       font-size: 12px;
-      margin: 0 auto;
+      margin: 16px auto;
     }
   }
 }

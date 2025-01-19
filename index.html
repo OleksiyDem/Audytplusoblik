@@ -98,7 +98,7 @@
       <div class="container">
         <!-- <div class="whywe-section__container">
           <div class="whywe-section__content"> -->
-        <h2 class="text-FW500-centered">Чому ми?</h2>
+        <h2 class="text-FW500">Чому ми?</h2>
         <p> <img class="whywe-section__image" src="./images/whywe-section-background-3.jpg" alt="Аудит"> Наша команда
           має
           багаторічний досвід з надання широкого спектру <span class="text-brand text-FW500">аудиторських та
@@ -192,7 +192,7 @@
     </section>
     <section class="services-section">
       <div class="container">
-        <h2 class="services-section__title text-FW500__centered">Послуги</h2>
+        <h2 class="services-section__title text-FW500__centered">Наші послуги</h2>
         <div class="services-section__slider">
           <button class="carousel-button prev">
             <svg height="16" width="16">
@@ -486,6 +486,55 @@
               високу довіру!</span></p>
         </div>
       </div>
+    </section>
+    <section class="contact-section">
+      <div class="container">
+        <h2 class="contact-section__title text-FW500__centered">Контактна інформація</h2>
+        <div class="contact-section__container">
+          <div class="contact-section__form">
+            <p class="text-centered text-brand">Заповніть форму, щоб ми звʼязались з Вами!</p>
+            <form name="contact-form" autocomplete="off" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+              <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+              <input type="hidden" name="from_name" value="My Website" />
+
+              <div class="contact-section__form-field input">
+                <label class="input__label visually-hidden" for="user-name">Ім'я</label>
+                <input class="input__control" type="text" name="user-name" id="user-name" placeholder="Ім'я"
+                  pattern="^[Є-ЯҐа-їґa-zA-Z\s]+$" required>
+              </div>
+
+              <div class="contact-section__form-field input">
+                <label class="input__label visually-hidden" for="user-tel">Телефон</label>
+                <input class="input__control" type="tel" name="user-tel" id="user-tel" placeholder="Телефон"
+                  pattern="^\+[0-9]{12}" required>
+              </div>
+
+              <div class="contact-section__form-field input">
+                <label class="input__label visually-hidden" for="user-email">Електронна пошта</label>
+                <input class="input__control" type="email" name="user-email" id="user-email"
+                  placeholder="Електронна пошта" required>
+              </div>
+              <div class="contact-section__form-field input">
+                <label class="input__label visually-hidden" for="message">Повідомлення</label>
+                <textarea class="input__control" id="message" name="message" placeholder="Ваше повідомлення" rows="6"
+                  maxlength="1000" required></textarea>
+              </div>
+
+              <button class="contact-section__button button" type="submit">Відправити повідомлення</button>
+              <div class="input__terms-container">
+                <input class="input__checkbox" type="checkbox" required>
+                <p class="input__terms"> Я погоджуюсь на обробку персональних даних </p>
+              </div>
+            </form>
+          </div>
+          <iframe class="contact-section__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536.2540527961587!2d30.816742991100057!3d50.52944494334158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d91a4f7d8305%3A0x28dbb72db452cc2f!2z0LHRg9C70YzQstCw0YAg0J3QtdC30LDQu9C10LbQvdC-0YHRgtGWLCA1Mywg0JHRgNC-0LLQsNGA0LgsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDA3NDAw!5e0!3m2!1suk!2sua!4v1737218319253!5m2!1suk!2sua"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+
     </section>
 
   </main>

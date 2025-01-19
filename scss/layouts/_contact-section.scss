@@ -1,0 +1,44 @@
+.contact-section {
+  padding-top: 52px;
+
+  &__container {
+    display: flex;
+    gap: 24px;
+
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+    }
+  }
+  &__form {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  &__title {
+    margin-bottom: 1.4em;
+  }
+
+  &__form-field {
+    margin-bottom: 24px;
+  }
+  &__button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0;
+  }
+  &__map {
+    flex-basis: calc((100% - 24px) / 2);
+    border-radius: 16px;
+    border: none;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin: auto;
+      width: 320px;
+      height: 534px;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      margin: 0 -24px;
+      width: auto;
+      height: 176px;
+    }
+  }
+}
