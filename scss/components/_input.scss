@@ -25,6 +25,9 @@
       font-size: 16px;
       line-height: 1.17;
       color: var(--color-secondary-dark);
+      @media screen and (max-width: $bp-tablet) {
+        font-size: 14px;
+      }
     }
     &:focus::placeholder {
       color: var(--color-primary-dark);
@@ -33,6 +36,12 @@
       padding: 8px 24px;
       font-size: 14px;
     }
+  }
+  &__tel:hover {
+    background-image: url('../images/tel-placeholder-1.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: initial;
   }
   &__terms-container {
     display: flex;
@@ -60,6 +69,5 @@
 }
 
 input[type='checkbox'] {
-  // accent-color: var(--color-brand-dark);
   accent-color: var(--color-brand);
 }
