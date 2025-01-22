@@ -1,10 +1,10 @@
 .footer {
   padding: 32px 0;
   background-color: var(--color-brand);
-  // background-image: url(../images/2148174136-1.png);
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center;
+  background-image: url(../images/background_image-8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   &__container {
     display: flex;
     gap: 20px;
@@ -80,14 +80,14 @@
     }
   }
 
-  &__bottles {
-    position: absolute;
-    width: 247px;
-    height: 152px;
-    right: 0;
-    bottom: 0;
-    @media screen and (max-width: $bp-tablet) {
-      display: none;
-    }
-  }
+  // &__bottles {
+  //   position: absolute;
+  //   width: 247px;
+  //   height: 152px;
+  //   right: 0;
+  //   bottom: 0;
+  //   @media screen and (max-width: $bp-tablet) {
+  //     display: none;
+  //   }
+  // }
 }
