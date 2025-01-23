@@ -40,11 +40,15 @@
     }
     &__dropdown {
       position: relative;
-      float: left;
+      // float: left;
       // padding-bottom: 20px;
     }
 
     &__dropdown:hover > &__sub-menu {
+      display: initial;
+      transition: display 1s;
+    }
+    &__dropdown:focus-within > &__sub-menu {
       display: initial;
       transition: display 1s;
     }
