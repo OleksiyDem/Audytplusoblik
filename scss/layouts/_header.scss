@@ -9,6 +9,9 @@
   backdrop-filter: blur(1px);
   background-color: rgba(254, 253, 248, 0.85);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  @media screen and (max-width: $bp-tablet) {
+    backdrop-filter: none;
+  }
 
   &__container,
   &__nav {
@@ -27,16 +30,9 @@
   }
   &__logo {
     max-width: 132px;
-
-    // max-width: 52px;
-    // @media screen and (max-width: $bp-desktop) {
-    //   width: 122px;
-    //   height: 28px;
-    // }
-    // @media screen and (max-width: $bp-tablet) {
-    //   width: 92px;
-    //   height: 24px;
-    // }
+    @media screen and (max-width: $bp-tablet) {
+      max-width: 116px;
+    }
   }
   &__menu {
     display: flex;
