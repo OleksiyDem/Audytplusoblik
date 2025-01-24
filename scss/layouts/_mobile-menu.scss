@@ -29,11 +29,10 @@
     }
     &__image {
       position: absolute;
-      opacity: 0.8;
+      opacity: 0.5;
       bottom: 16px;
       right: 24px;
-      width: 90px;
-      height: 120px;
+      max-width: 104px;
     }
     &__btn-close {
       position: absolute;
