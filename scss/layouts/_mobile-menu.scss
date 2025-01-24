@@ -13,15 +13,16 @@
     transform: translatex(100%);
     transition: transform 0.3s;
     overflow: hidden;
-    &::after {
+    &::before {
+      content: '';
       position: absolute;
+      opacity: 0.8;
       bottom: 0;
       right: 0;
       width: 90px;
       height: 120px;
       background-repeat: no-repeat;
       background-image: url('../../images/burger_image-2.png');
-      content: '';
     }
     &.is-open {
       transform: translatex(0);
