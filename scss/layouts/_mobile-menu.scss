@@ -27,6 +27,14 @@
     &.is-open {
       transform: translatex(0);
     }
+    &__image {
+      position: absolute;
+      opacity: 0.8;
+      bottom: 16px;
+      right: 24px;
+      width: 90px;
+      height: 120px;
+    }
     &__btn-close {
       position: absolute;
       top: 16px;
@@ -53,17 +61,6 @@
       position: relative;
       // float: left;
       // padding-bottom: 20px;
-      &::before {
-        content: '';
-        position: absolute;
-        opacity: 0.8;
-        bottom: 0;
-        right: 0;
-        width: 90px;
-        height: 120px;
-        background-repeat: no-repeat;
-        background-image: url('../../images/burger_image-2.png');
-      }
     }
 
     &__dropdown:hover > &__sub-menu {
