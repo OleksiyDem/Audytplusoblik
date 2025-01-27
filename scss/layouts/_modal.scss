@@ -24,14 +24,17 @@
   width: 100%;
   max-width: 880px;
   height: 100%;
-  // max-height: 880px;
+  max-height: 880px;
   padding: 64px 128px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
   overflow-y: auto;
 
   @media screen and (max-width: $bp-tablet) {
-    padding: 60px 48px 48px;
+    padding: 64px 48px 48px;
+  }
+  @media screen and (max-width: $bp-mobile) {
+    padding: 64px 24px 48px;
   }
 
   &__btn-close {
