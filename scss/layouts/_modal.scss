@@ -31,7 +31,7 @@
   overflow-y: auto;
 
   @media screen and (max-width: $bp-tablet) {
-    padding: 64px 48px 48px;
+    padding: 64px 64px 48px;
   }
   @media screen and (max-width: $bp-mobile) {
     padding: 64px 24px 48px;
@@ -48,5 +48,17 @@
     background-color: transparent;
     fill: transparent;
     cursor: pointer;
+    @media screen and (max-width: $bp-mobile) {
+      top: 24px;
+      right: 24px;
+    }
+  }
+  &__form-field {
+    margin-bottom: 24px;
+  }
+  &__button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0;
   }
 }
