@@ -8,11 +8,21 @@
 .text-centered {
   text-align: center;
 }
+.text-left {
+  text-align: left;
+}
 .text-brand {
   color: var(--color-brand);
 }
 .text-accent {
   color: var(--color-accent);
+}
+.text-accent--link {
+  color: var(--color-accent);
+  text-decoration: none;
+  &:hover {
+    font-weight: 500;
+  }
 }
 .text-nomargin {
   margin: 0;

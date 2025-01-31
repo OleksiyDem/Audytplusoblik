@@ -1,0 +1,35 @@
+.company-page {
+  margin-top: 112px;
+  margin-bottom: 52px;
+  &__title {
+    margin-top: 1.4em;
+    &--h1 {
+      font-size: 56px;
+      font-weight: 600;
+      letter-spacing: normal;
+      @media screen and (max-width: $bp-desktop) {
+        font-size: 50px;
+      }
+      @media screen and (max-width: $bp-tablet) {
+        font-size: 38px;
+      }
+      @media screen and (max-width: $bp-mobile) {
+        font-size: 32px;
+      }
+    }
+  }
+  &__list {
+    padding: 12px;
+    margin-bottom: 48px;
+    background-color: rgba(3, 86, 122, 0.05);
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 32px;
+    }
+  }
+  &__customers {
+    margin-bottom: 48px;
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 32px;
+    }
+  }
+}
