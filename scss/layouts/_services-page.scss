@@ -1,8 +1,8 @@
-.company-page {
+.services-page {
   margin-top: 112px;
   margin-bottom: 52px;
   &__title {
-    padding-top: 1.2em;
+    padding-top: 2em;
     &--h1 {
       font-size: 56px;
       font-weight: 600;
@@ -17,22 +17,11 @@
         font-size: 32px;
       }
     }
-  }
-  &__list,
-  &__text {
-    padding-top: 48px;
-    @media screen and (max-width: $bp-tablet) {
-      padding-top: 32px;
+    &--h2 {
+      padding-top: 1em;
     }
   }
-  &__card {
-    padding: 12px;
-    background-color: rgba(3, 86, 122, 0.05);
-  }
-  &__customers {
-    margin-bottom: 48px;
-    @media screen and (max-width: $bp-tablet) {
-      margin-bottom: 32px;
-    }
+  &__list {
+    margin-bottom: 1em;
   }
 }
