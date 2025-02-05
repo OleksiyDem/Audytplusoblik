@@ -69,14 +69,14 @@
       display: initial;
       transition: display 1s;
     }
-    &__dropdown:focus-within > &__sub-menu {
-      display: initial;
-      transition: display 1s;
-    }
+    // &__dropdown:focus-within > &__sub-menu {
+    //   display: initial;
+    //   transition: display 1s;
+    // }
 
     // header nav ul li ul
     &__sub-menu {
-      // display: none;
+      display: none;
       line-height: 2;
       transition: display 1s;
     }
