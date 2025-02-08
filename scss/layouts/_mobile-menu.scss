@@ -65,20 +65,20 @@
     //   // padding-bottom: 20px;
     // }
 
-    &__dropdown:hover > &__sub-menu {
-      display: initial;
-      transition: display 1s;
-    }
-    &__dropdown:focus-within > &__sub-menu {
-      display: initial;
-      transition: display 1s;
-    }
+    // &__dropdown:hover > &__sub-menu {
+    //   display: initial;
+    //   transition: display 1s;
+    // }
+    // &__dropdown:focus-within > &__sub-menu {
+    //   display: initial;
+    //   transition: display 1s;
+    // }
     // // header nav ul li ul
-    &__sub-menu {
-      display: none;
-      line-height: 2;
-      transition: display 1s;
-    }
+    // &__sub-menu {
+    //   display: none;
+    //   line-height: 2;
+    //   transition: display 1s;
+    // }
     // header nav ul li ul li
     &__dropdown--level1 {
       width: 100%;

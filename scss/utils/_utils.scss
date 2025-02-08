@@ -5,6 +5,14 @@
   width: 1px;
   height: 1px;
   overflow: hidden;
+  &__anchor {
+    position: absolute;
+    left: -10000px;
+    top: -70px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
 }
 .is-scroll-disabled {
   overflow: hidden;
