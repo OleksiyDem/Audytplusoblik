@@ -10,13 +10,14 @@
   &__slide {
     height: 100px;
     border-radius: 12px;
-    margin-bottom: 4px;
+    margin: 4px 0;
+    // margin-bottom: 4px;
     background-color: rgba(3, 86, 122, 0.05);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     &:hover {
       background-color: rgba(3, 86, 122, 0.08);
-      box-shadow: 0 8px 16px 0 rgba(24, 24, 23, 0.08);
-      transform: scale(1.01);
+      box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.2);
+      // transform: scale(1.01);
     }
   }
   &__card {
