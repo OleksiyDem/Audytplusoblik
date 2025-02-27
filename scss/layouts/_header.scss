@@ -84,10 +84,10 @@
   }
   // header nav ul li ul li ul
   &__sub-menu--level1 {
-    left: 212px;
+    left: 210px;
     top: 0;
     @media screen and (max-width: $bp-desktop) {
-      left: -234px;
+      left: -224px;
     }
   }
   &__icons {
