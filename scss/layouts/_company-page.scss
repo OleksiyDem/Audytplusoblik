@@ -21,8 +21,14 @@
   &__list,
   &__text {
     padding-top: 48px;
+    @media screen and (max-width: $bp-desktop) {
+      padding-top: 42px;
+    }
     @media screen and (max-width: $bp-tablet) {
       padding-top: 32px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      padding-top: 26px;
     }
   }
   &__card {
@@ -32,7 +38,13 @@
   &__customers {
     margin-bottom: 48px;
     @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 42px;
+    }
+    @media screen and (max-width: $bp-tablet) {
       margin-bottom: 32px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      margin-bottom: 26px;
     }
   }
 }

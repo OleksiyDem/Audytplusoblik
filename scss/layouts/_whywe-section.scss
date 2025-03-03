@@ -1,7 +1,11 @@
 .whywe-section {
-  // background: linear-gradient(to right, transparent, #d5e4e6);
-  // margin-top: 40px;
   padding-top: 52px;
+  @media screen and (max-width: $bp-tablet) {
+    padding-top: 42px;
+  }
+  @media screen and (max-width: $bp-mobile) {
+    padding-top: 36px;
+  }
 
   // &__container {
   //   display: flex;
@@ -22,19 +26,18 @@
     margin: 0 0px 4px 40px; /* Відступи навколо картинки */
     border-radius: 12px;
     box-shadow: 0 2px 10px 0 rgba(222, 221, 221, 0.5);
-    // background: linear-gradient(
-    //   89.38deg,
-    //   rgba(242, 241, 237),
-    //   rgba(242, 241, 237, 0.850898) 41.31%,
-    //   rgba(255, 241, 237, 0.193204) 58.65%,
-    //   rgba(242, 241, 237, 0.1) 72.78%
-    // );
     @media screen and (max-width: $bp-desktop) {
       max-width: 344px;
       // max-height: 180px;
     }
     @media screen and (max-width: $bp-tablet) {
       display: none;
+    }
+  }
+  &__text-bottom {
+    margin: 0;
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 1em;
     }
   }
   &__image-mobile {

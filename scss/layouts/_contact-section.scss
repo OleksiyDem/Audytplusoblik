@@ -1,7 +1,10 @@
 .contact-section {
   padding: 52px 0;
   @media screen and (max-width: $bp-tablet) {
-    padding: 52px 0 0;
+    padding: 42px 0 0;
+  }
+  @media screen and (max-width: $bp-mobile) {
+    padding: 36px 0 0;
   }
 
   &__container {
@@ -16,9 +19,9 @@
     flex-basis: calc((100% - 24px) / 2);
   }
 
-  &__title {
-    margin-bottom: 1.4em;
-  }
+  // &__title {
+  //   margin-bottom: 1.4em;
+  // }
 
   &__form-field {
     margin-bottom: 24px;

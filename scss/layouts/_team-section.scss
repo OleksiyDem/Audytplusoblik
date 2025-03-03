@@ -1,8 +1,14 @@
 .team-section {
   padding-top: 52px;
-  &__title {
-    margin-bottom: 1.4em;
+  @media screen and (max-width: $bp-tablet) {
+    padding-top: 42px;
   }
+  @media screen and (max-width: $bp-mobile) {
+    padding-top: 36px;
+  }
+  // &__title {
+  //   margin-bottom: 1.4em;
+  // }
 
   &__list {
     display: flex;
