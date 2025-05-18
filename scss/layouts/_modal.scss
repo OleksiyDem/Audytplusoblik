@@ -36,6 +36,9 @@
   @media screen and (max-width: $bp-mobile) {
     padding: 64px 24px 48px;
   }
+  &::-webkit-scrollbar {
+    width: 0; // зменш. ширину прокрутки до 0
+  }
 
   &__btn-close {
     position: absolute;

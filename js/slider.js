@@ -1,5 +1,6 @@
 var swiper = new Swiper('.swiper-services', {
   // Optional parameters
+  // чи буде слайдер безкінечним
   loop: true,
 
   // Default parameters к-ть слайдів на екрані
@@ -8,7 +9,7 @@ var swiper = new Swiper('.swiper-services', {
   // відстань між слайдами, px
   spaceBetween: 20,
 
-  // Responsive breakpoints
+  // Responsive breakpoints (mobile-first)
   breakpoints: {
     // when window width is >= 768px
     768: {
