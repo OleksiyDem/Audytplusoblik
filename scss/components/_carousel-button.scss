@@ -11,7 +11,7 @@
   background-color: transparent;
   border: var(--color-brand) 1px solid;
   cursor: pointer;
-  transition: fill 0.2s, background-color 0.2s, border-color 0.2s;
+  transition: fill 0.2s, background-color 0.2s, border-color 0.2s, opacity 0.2s;
   @media screen and (max-width: $bp-tablet) {
     display: none;
   }
@@ -19,6 +19,12 @@
     fill: var(--color-primary-light);
     background-color: var(--color-brand-secondary);
     border: var(--color-brand-secondary) 1px solid;
+  }
+  &:active {
+    fill: var(--color-primary-light);
+    background-color: var(--color-brand-secondary);
+    border: var(--color-brand-secondary) 1px solid;
+    opacity: 0.5;
   }
   &.next {
     transform: rotate(180deg);
