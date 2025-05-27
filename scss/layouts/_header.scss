@@ -13,9 +13,9 @@
   &.hide {
     transform: translateY(-100%);
   }
-  // @media screen and (max-width: $bp-tablet) {
-  //   backdrop-filter: none;
-  // }
+  @media screen and (max-width: $bp-tablet) {
+    backdrop-filter: none;
+  }
 
   &__container,
   &__nav {
